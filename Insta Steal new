@@ -297,7 +297,7 @@ discordText.Size = UDim2.new(1, 0, 0, 12)
 discordText.Position = UDim2.new(0, 0, 1, -15)
 discordText.BackgroundTransparency = 1
 discordText.Text = "https://discord.gg/z7mFnjnS"
-discordText.TextColor3 = Color3.fromRGB(255, 200, 0)
+discordText.TextColor3 = Color3.fromRGB(0, 170, 255)
 discordText.TextSize = 7
 discordText.Font = Enum.Font.GothamBold
 discordText.TextStrokeTransparency = 0.5
@@ -628,4 +628,5 @@ dropdownOpen = not dropdownOpen
 local targetSize = dropdownOpen and UDim2.new(0.9, 0, 0, 81) or UDim2.new(0.9, 0, 0, 23)
 dropdownButton.Text = dropdownOpen and "TP TO SPOT ▲" or "TP TO SPOT ▼"
 TweenService:Create(dropdownContainer, TweenInfo.new(0.2), {Size = targetSize}):Play()
+
 end)
